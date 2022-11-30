@@ -15,32 +15,14 @@ const { title } = Astro.props;
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="bg-outer-space text-white">
+		<header class="flex flex-row p-4">
+			<h1 class="text-xl font-bold">kosmiq</h1>
+			<nav class="ml-auto">
+				<!-- <a href="/" class="mx-2 underline underline-offset-2">Home</a>
+				<a href="/contact" class="mx-2 underline underline-offset-2">Contact</a> -->
+			</nav>
+		</header>
 		<slot />
 	</body>
 </html>
-<style is:global>
-	:root {
-		--accent: #2613af;
-		--accent-dark: #00007f;
-		--accent-gradient: linear-gradient(
-			90deg,
-			var(--accent-dark),
-			var(--accent)
-		);
-	}
-	html {
-		font-family: system-ui, sans-serif;
-		color: aliceblue;
-		background: var(--accent-gradient);
-	}
-	body {
-		min-width: 600px;
-		max-width: max-content;
-		margin: 0 auto;
-	}
-	code {
-		font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-			DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-	}
-</style>
