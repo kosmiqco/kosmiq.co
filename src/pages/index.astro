@@ -4,9 +4,57 @@ import Layout from "../layouts/Layout.astro";
 
 <Layout title="Kosmiq">
     <main class="p-4 max-w-screen-xl">
-        <h1 class="text-2xl underline underline-offset-2 decoration-wavy decoration-sunglow">Stellar Software Development</h1>
-        <div class="italic text-deep-space">
-            🚧 This site is under construction 🚧
-        </div>
+        <!-- A nice link with graphics to our Github -->
+        <article style="text-md py-4 flow flow-col m-2">
+        <a href="https://github.com/kosmiqco">
+            <img src="https://img.shields.io/badge/Github-kosmiqco-8da0cb?style=for-the-badge&logo=github" alt="Github" />
+        </a>
+        </article>
+        <!-- Our services section with our three offer in columns -->
+        <section>
+            <h2 class="text-2xl font-bold text-center my-8">Our Services</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <article class="p-4 rounded-md bg-outer-space">
+                    <h3 class="text-xl font-bold">Software Development</h3>
+                    <p class="text-md">
+                        We develop websites and web applications for all kinds of purposes.
+                    </p>
+                </article>
+                <article class="p-4 rounded-md bg-outer-space">
+                    <h3 class="text-xl font-bold">Web Development</h3>
+                    <p class="text-md">
+                        We design websites and web applications for all kinds of purposes.
+                    </p>
+                </article>
+                <article class="p-4 rounded-md bg-outer-space">
+                    <h3 class="text-xl font-bold">Web Hosting</h3>
+                    <p class="text-md">
+                        We host websites and web applications for all kinds of purposes.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- TODO: Contact section is a WIP
+        <section>
+            <h2 class="text-2xl font-bold text-center">Contact Us</h2>
+            <form class="p-4" action="mailto:contact@kosmiq.co">
+                <div class="flex flex-col gap-2">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" />
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" />
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" rows="4"></textarea>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        -->
     </main>
 </Layout>
